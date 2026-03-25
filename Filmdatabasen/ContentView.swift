@@ -12,6 +12,7 @@ struct Film {
     let year: String
     let genre: String
 }
+ 
 
 struct ContentView: View {
     var body: some View {
@@ -21,7 +22,15 @@ struct ContentView: View {
            Film(name: "Inception", year: "2010", genre: "Action, Adventure, Sci-Fi")
             ]
         
-        VStack{
+        VStack(spacing: 20){
+            Image("TheMatrix")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+                .cornerRadius(20)
+                .shadow(radius: 10)
+            
+                
             ForEach(films, id: \.name) { film in
                 VStack(alignment: .leading){
                     Text(film.name)
