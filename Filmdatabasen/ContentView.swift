@@ -273,8 +273,8 @@ struct ContentView: View {
                 // MARK: Bloody Red Title
                 // .principal replaces the default navigation title with a custom styled view
                 ToolbarItem(placement: .principal) {
-                    Text("Filmdatabasen")
-                        .font(.custom("Georgia-BoldItalic", size: 24))
+                    Text("Showbox")
+                        .font(.custom("Georgia-BoldItalic", size: 28))
                         .foregroundColor(Color(red: 0.6, green: 0.0, blue: 0.0))
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
